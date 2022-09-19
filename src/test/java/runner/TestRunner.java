@@ -12,8 +12,5 @@ import org.junit.runner.RunWith;
         glue = "seleniumgluecode"
 )
 public class TestRunner {
-    @Before
-    private void setSystemProp() {
-        System.setProperty( "webdriver.chrome.driver","/src/test/resources/chromedriver/chromedriver");
-    }
+
 }
