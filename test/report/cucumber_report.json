@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6969253665,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Ingresar a la categoria Comics desde Home",
+        "description": "",
+        "id": "categoria-comics;ingresar-a-la-categoria-comics-desde-home",
+        "after": [
+          {
+            "result": {
+              "duration": 69901234,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 167914818,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "El usuario se encuentra en la pagina Home",
+            "match": {
+              "location": "Test.el_usuario_se_encuentra_en_la_pagina_Home_de()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48124508561,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Hace click sobre el boton The little tester comics",
+            "match": {
+              "location": "Test.hace_click_sobre_el_boton_The_little_tester_comics()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44261563,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Nos redirige a la pantalla de comics",
+            "match": {
+              "location": "Test.nos_redirige_a_la_pantalla_de_comics()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Categoria Comics",
+    "description": "Como usuario quiero entrar al sitio imalittletester e ingresar a los comics para reir",
+    "id": "categoria-comics",
+    "keyword": "Feature",
+    "uri": "test.feature"
+  }
+]

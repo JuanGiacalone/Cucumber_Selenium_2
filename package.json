@@ -1,0 +1,23 @@
+{
+  "name": "cucumber_selenium_2",
+  "version": "1.0.0",
+  "description": "New structure with hooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "report": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanGiacalone/Cucumber_Selenium_2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanGiacalone/Cucumber_Selenium_2/issues"
+  },
+  "homepage": "https://github.com/JuanGiacalone/Cucumber_Selenium_2#readme",
+  "devDependencies": {
+    "multiple-cucumber-html-reporter": "^2.0.0"
+  }
+}
