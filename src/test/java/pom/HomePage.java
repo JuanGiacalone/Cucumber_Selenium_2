@@ -3,14 +3,23 @@ package pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage{
 
-    String titleHomePage = "imalittletester – Testing. With Java, Selenium, TestNG, Maven, Spring, IntelliJ and friends.";
+    private String titleHomePage = "imalittletester – Testing. With Java, Selenium, TestNG, Maven, Spring, IntelliJ and friends.";
 
-    By titleComicsLocator = By.id("menu-item-2008");
+    @FindBy(id = "menu-item-2008")
+    public WebElement titleComicsLocator;
+
+    @FindBy(id = "menu-item-2008")
+    @CacheLookup
+    public WebElement titleComicsLocatorCached;
+
+    private By titleComicsLocatorBy = By.id("menu-item-2008");
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -21,11 +30,15 @@ public class HomePage extends BasePage{
     WebElement aVisibleComics = wait.until(ExpectedConditions.visibilityOf(linkComics));
         aVisibleComics.click(); */
 
+    public By getTitleComicsLocatorBy() {
+        return titleComicsLocatorBy;
+    }
+
     public String getTitleHomePage() {
         return titleHomePage;
     }
 
-    public By getTitleComicsLocator() {
+    public WebElement getTitleComicsLocator() {
         return titleComicsLocator;
     }
 
@@ -36,5 +49,6 @@ public class HomePage extends BasePage{
     }
     public void clickOnTitleComics () throws Exception {
         this.click(titleComicsLocator);
+        return;
     }
 }

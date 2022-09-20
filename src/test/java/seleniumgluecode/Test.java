@@ -5,6 +5,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+import pom.HomePage;
 
 
 import java.time.Duration;
@@ -27,12 +29,13 @@ public class Test extends TestBase{
     }
 
     @When("^Hace click sobre el boton The little tester comics$")
-    synchronized public void hace_click_sobre_el_boton_The_little_tester_comics() throws Exception {
+    public void hace_click_sobre_el_boton_The_little_tester_comics() throws Exception {
 
-     /* WebElement titleComicsLocator = driver.findElement(homePage.getTitleComicsLocator());
-    titleComicsLocator.click(); */
-        homePage.clickOnTitleComics();
-
+     // WebElement titleComicsLocator = driver.findElement(homePage.getTitleComicsLocatorBy());
+      // titleComicsLocator.click();
+        //  homePage.clickOnTitleComics();
+        System.out.println("Elemento: " + homePage.titleComicsLocator);
+        homePage.titleComicsLocator.click();
     }
 
     @Then("^Nos redirige a la pantalla de comics$")

@@ -2,18 +2,21 @@ package pom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class ComicsPage extends BasePage {
 
-        private By pageTitleLocator = By.className("page-title");
+    @FindBy(className = "page-title")
+    private WebElement pageTitleLocator;
 
-        private String titlePage = "Category: comics";
+    private String titlePage = "Category: comics";
 
     public ComicsPage(WebDriver driver) {
         super(driver);
     }
 
-    public By getPageTitleLocator() {
+    public WebElement getPageTitleLocator() {
         return pageTitleLocator;
     }
 
