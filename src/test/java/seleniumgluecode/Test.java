@@ -35,7 +35,7 @@ public class Test extends TestBase{
       // titleComicsLocator.click();
         //  homePage.clickOnTitleComics();
         System.out.println("Elemento: " + homePage.titleComicsLocator);
-        homePage.titleComicsLocator.click();
+        homePage.clickOnTitleComics();
     }
 
     @Then("^Nos redirige a la pantalla de comics$")
