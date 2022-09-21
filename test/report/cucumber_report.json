@@ -6,7 +6,447 @@
         "before": [
           {
             "result": {
-              "duration": 6969253665,
+              "duration": 104110,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Data table",
+        "description": "",
+        "id": "ejemplo-data-table;data-table",
+        "after": [
+          {
+            "result": {
+              "duration": 36826,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 173463072,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Los siguientes usuarios:",
+            "match": {
+              "location": "Test.losSiguientesUsuarios(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nombre",
+                  "email",
+                  "twt"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "jp",
+                  "q@a.com",
+                  "/asd"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "jc",
+                  "a@a.com",
+                  "/fgh"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Ejemplo Data Table",
+    "description": "Uso data table",
+    "id": "ejemplo-data-table",
+    "keyword": "Feature",
+    "uri": "EjemploDataTable.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 28391,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Doc Strings",
+        "description": "",
+        "id": "doc-strings;doc-strings",
+        "after": [
+          {
+            "result": {
+              "duration": 17169,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2652415,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Un blog \"Random\" con el siguiente contenido",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Random",
+                  "offset": 9
+                }
+              ],
+              "location": "Test.unBlogConElSiguienteContenido(String,String)"
+            },
+            "keyword": "Given ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "Teoria de la tierra\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nPrimer Parrafo\n\nSegundo Parrafo\n\netc."
+            }
+          }
+        ]
+      }
+    ],
+    "name": "Doc Strings",
+    "description": "Pruebo Doc Strings",
+    "id": "doc-strings",
+    "keyword": "Feature",
+    "uri": "EjemploDocString.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 29268,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "",
+        "description": "",
+        "id": "categoria-ejemplo;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 12465,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 770414,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Existen 5 cocas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 8
+                }
+              ],
+              "location": "Test.existenCocas(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 90200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Me tomo 3 cocas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 8
+                }
+              ],
+              "location": "Test.meTomoCocas(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 69709,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Deberian quedar 2 cocas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 16
+                }
+              ],
+              "location": "Test.deberianQuedarCocas(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 31635,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "",
+        "description": "",
+        "id": "categoria-ejemplo;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 12570,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 287325,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Existen 10 cocas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 8
+                }
+              ],
+              "location": "Test.existenCocas(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 78521,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Me tomo 5 cocas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 8
+                }
+              ],
+              "location": "Test.meTomoCocas(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67260,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Deberian quedar 5 cocas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 16
+                }
+              ],
+              "location": "Test.deberianQuedarCocas(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 26269,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "",
+        "description": "",
+        "id": "categoria-ejemplo;;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 8484,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 273888,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Existen 2 cocas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 8
+                }
+              ],
+              "location": "Test.existenCocas(int)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 76152,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Me tomo 2 cocas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 8
+                }
+              ],
+              "location": "Test.meTomoCocas(int)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35762,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Deberian quedar 0 cocas",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 16
+                }
+              ],
+              "location": "Test.deberianQuedarCocas(int)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Categoria Ejemplo",
+    "description": "Como usuario quiero leer comics",
+    "id": "categoria-ejemplo",
+    "keyword": "Feature",
+    "uri": "EjemploOutline.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 25716,
               "status": "passed"
             },
             "match": {
@@ -21,11 +461,11 @@
         "after": [
           {
             "result": {
-              "duration": 69901234,
+              "duration": 16608,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.tearDown()"
+              "location": "Hooks.tearDown(Scenario)"
             }
           }
         ],
@@ -34,8 +474,9 @@
         "steps": [
           {
             "result": {
-              "duration": 167914818,
-              "status": "passed"
+              "duration": 1698392,
+              "error_message": "java.lang.Exception: No se pudo obtener el titulo del driver\n\tat pom.BasePage.getTitle(BasePage.java:64)\n\tat pom.HomePage.homePageIsDisplayed(HomePage.java:48)\n\tat seleniumgluecode.Test.el_usuario_se_encuentra_en_la_pagina_Home_de(Test.java:25)\n\tat ✽.Given El usuario se encuentra en la pagina Home(test.feature:4)\n",
+              "status": "failed"
             },
             "line": 4,
             "name": "El usuario se encuentra en la pagina Home",
@@ -46,8 +487,7 @@
           },
           {
             "result": {
-              "duration": 48124508561,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "Hace click sobre el boton The little tester comics",
@@ -58,8 +498,7 @@
           },
           {
             "result": {
-              "duration": 44261563,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "Nos redirige a la pantalla de comics",

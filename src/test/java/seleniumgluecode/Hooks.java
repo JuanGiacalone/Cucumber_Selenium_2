@@ -1,8 +1,11 @@
 package seleniumgluecode;
 
 
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import runner.browser_manager.DriverManager;
@@ -31,7 +34,13 @@ public class Hooks {
     }
 
     @After
-    public void tearDown () {
+    public void tearDown (Scenario scenario) {
+
+        // Si el escenario falla se hace un screenshot
+        if (scenario.isFailed()) {
+            byte [] screenshot = ((TakesScreenshot)driverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
+            scenario.embed(screenshot,"image/jpeg");
+        }
 
         System.out.println("Se ejecuto el escenario nro:" + numberOfCase);
         driverManager.quitDriver();

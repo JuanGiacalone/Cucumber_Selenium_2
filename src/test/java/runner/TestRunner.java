@@ -2,6 +2,7 @@ package runner;
 
 
 import cucumber.api.CucumberOptions;
+import cucumber.api.SnippetType;
 import cucumber.api.junit.Cucumber;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -14,7 +15,8 @@ import java.util.List;
 @CucumberOptions(
         features = "src/test/java/features",
         glue = "seleniumgluecode",
-        plugin = {"json:test/report/cucumber_report.json"}
+        plugin = {"json:test/report/cucumber_report.json"},
+        snippets = SnippetType.CAMELCASE
 
         /* plugin= {"json:target/RunCuke/cucumber.json",
                 "pretty","html:target/RunCuke/cucumber.html",
